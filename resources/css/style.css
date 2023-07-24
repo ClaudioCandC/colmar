@@ -34,6 +34,10 @@ button {
   border: none;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .bannerimg2 p {
   color: gray;
 }
@@ -226,6 +230,24 @@ button {
   margin: 16px 24px;
 }
 
+.sl-mobile {
+  display: none;
+}
+
+.sl-button {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  margin: 8px;
+  width: 95%;
+  align-content: center;
+  padding: 24px;
+}
+.smallphotos-mobile {
+  display: none;
+}
+
+
 @media only screen and (max-width: 600px) {
  .bannerimg2 {
    display: none;
@@ -236,9 +258,80 @@ button {
   flex-flow: column;
  }
 
+
  .orientation, .campus, .guest {
   display: flex;
   flex-flow: column;
  }
+
+ .learn {
+  display: flex;
+  flex-flow:column;
+  font-size: large;
+  padding-top: 2%;
+ }
+
+ .learn img {
+  width: 100%;
+  margin-top: 12%;
+ }
+
+ .smallimg img {
+  width: 100%;
+ }
+
+ .urban {
+  display: none;
+ }
+
+ .footer2 {
+  display: none;
+ }
+
+ .footer1 {
+  width: 100%;
+ }
+.practice h1 {
+  text-align: center;
+}
+
+.sl-grid-wrapper {
+  display: none;
+}
+
+nav > .logo, nav li {
+  display: none;
+}
+
+.mobile-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 7%;
+  padding-top: 2%;
+  position: fixed;
+  text-align: center;
+  background-color: white;
+  width: 100%
+}
+
+.sl-mobile {
+  display: flex;
+  flex-direction:column;
+}
+
+.smallphotos-mobile {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.smallimg {
+  width: 100%;
+}
+
+.smallphotos {
+  display: none;
+}
 
 }
